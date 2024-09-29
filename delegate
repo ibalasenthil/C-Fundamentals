@@ -1,0 +1,18 @@
+using System;
+public class Demo 
+{
+    public delegate void del(); 
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("test");
+        Demo d = new Demo();
+        del nn = d.Method1;
+        //d.Method1();
+        //d();
+        nn();
+    }
+    public void Method1()
+    {
+        Console.WriteLine("Method1");
+    }
+}
