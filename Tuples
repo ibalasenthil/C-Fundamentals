@@ -1,0 +1,14 @@
+using System; 
+public class Demo
+{
+    public static void Main(string[] args)
+    {
+        //old style tuple
+        Tuple<int> t = new Tuple<int>(1);
+        Console.WriteLine(t.Item1);
+        
+        // from C# 7 value tuple 
+        var Tu = (Id:1, Name:"test");
+        Console.WriteLine(Tu.Id);
+    }
+}
