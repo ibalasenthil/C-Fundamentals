@@ -1,0 +1,30 @@
+using System;
+
+public class HelloWorld
+{
+    public delegate void MyDelegate();
+    public static void Main(string[] args)
+    {
+        HelloWorld demo = new HelloWorld();
+        
+        MyDelegate deg = demo.Method1;
+        deg += demo.Method2;
+        deg += demo.M1;
+        deg();
+        
+        //MyDelegate d1 = demo.M1;
+        //d1();
+    }
+    public void Method1()
+    {
+        Console.WriteLine("Method 1");
+    }
+    public void Method2()
+    {
+        Console.WriteLine("Method 2");
+    }
+    public void M1()
+    {
+        Console.WriteLine("m1");
+    }
+}
