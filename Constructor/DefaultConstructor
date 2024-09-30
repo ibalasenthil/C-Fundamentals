@@ -1,0 +1,21 @@
+
+using System;
+    public class Test{
+     static void Main(string[] args)
+    {
+        Console.WriteLine("test");
+        Person p = new Person(); // matches with class name
+        p.Dis();
+    }
+}
+class Person
+{
+    public Person() //Default Constructor
+    {
+       // Console.WriteLine("default");
+    }
+    public void Dis()
+    {
+        Console.WriteLine("Default");
+    }
+}
