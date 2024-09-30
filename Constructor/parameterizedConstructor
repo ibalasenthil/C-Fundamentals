@@ -1,0 +1,22 @@
+using System;
+class Demo
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("test");
+        myClass car2 = new myClass("Toyota",2022);
+        Console.WriteLine($"Car:{car2.Brand}");
+    }
+}
+class myClass
+{
+    public int modelYear;
+    public string Brand;
+    //parametrized ctor
+    public myClass (string B,int Y)
+    {
+        Brand = B;
+        modelYear = Y;
+        Console.WriteLine("Param called");
+    }
+}
