@@ -1,0 +1,28 @@
+//data types
+// value types - stored directly in memory
+// hold actual values, ex: int, float , bool, char, stuct , etc
+// reference types - won't store variable value directly in memory
+//stored in heap memory ex: string , arrary, class, etc
+// boxing - value type to reference type(object)
+// unboxing - object to value type
+// pointer type - contain memory address of variable value.
+// address operator - ampersane & and asterisk * 
+
+using System; 
+class demo
+{
+    public static void Main(string[] args)
+    {
+        int valueType = 30;
+        string refType = "Hello";
+        Console.WriteLine(valueType);
+        Console.WriteLine(refType);
+        //boxing
+        int num = 10;
+        object boxednum =num;
+        Console.WriteLine(boxednum);
+        //unboxing 
+        int unbox =(int) boxednum;
+        Console.WriteLine(unbox);
+    }
+}
